@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Portfolio</title>
+  <style>
+    /* ----- Reset ----- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      line-height: 1.5;
+    }
+
+    #ONE{
+      text-align: center;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+    }
+
+    section {
+      padding: 1.5rem;
+    }
+
+    .about {
+      background: #f4f4f4;
+    }
+
+    .projects {
+      display: flexbox;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .project-card {
+      background: #e2e2e2;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .contact {
+      background: #fefefe;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .projects a button{
+      border-radius: 60px;
+      padding: 10px;
+      background-color: blue;
+    }
+
+    /* ----- Media Queries (Tablet & Desktop) ----- */
+    @media (min-width: 768px) {
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .projects {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .about {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      input, textarea {
+        flex: 1 1 45%;
+      }
+
+      textarea {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harish Vadivel</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>      
+    I specialize in HTML, CSS, and JavaScript, and enjoy working with modern frameworks like React  to create seamless and dynamic user interfaces. I'm always eager to learn and keep up with the latest trends in web development to deliver user-centric, high-performance websites
+.</p>
+
+  <section class="total">
+    <div>
+      <h1>EDUCATION </h1>
+      <h2>B.E Computer Science And Engineering</h2>
+      <h5>S.K.P Engineering COLLEGE</h5>
+      <p><li>	My coursework includes areas like algorithms, data structures, software development, and computer networks, which complement my passion for web development </li><li>	This degree is helping me build the skills necessary to tackle complex problems and innovate in the tech industry
+</li><li>	CGPA 8.0 </li>
+</p>
+      <h2>12Th And 10Th</h2>
+      <h6>Government Boys Higher Secondary School Kilpennathur</h6>
+        <ul>
+          <li>	I have completed my 12th as group of subjects physics, chemistry, mathematics in 2021 </li>
+          <li>	12th percentage: 84% </li>
+          <li>	Also I completed my 10th SSLC same school with percentage of :81% </li>
+        </ul>
+      <h1>SKILLS</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git</li>
+        <li>Github</li>
+        <li>DCA</li>
+
+      </ul>
+    </div>
+   
+    
+  </section>
+  <h2 id="ONE">PROJECTS</h2>
+  <section class="projects">
+    <h4>1. Portfolio Website(HTML,CSS)</h4><br>
+            Designed and developed a personal portfolio website using HTML5 and CSS3.
+ Implemented a responsive, mobile-first layout showcasing skills, projects, and contact details.
+ Deployed the project on GitHub Pages for public access. 
+    <a href=""><button >view</button></a>
+    <h4>2. college website(React+Vite) </h4>
+    Built a dynamic, multi-page college website using React and Vite for fast development and modular structure.
+ Applied React components, routing, and responsive design principles using Flexbox and CSS Grid.
+ Integrated modern UI design and deployed the project on GitHub Pages.
+    <a href="https://harish02122003.github.io/my-react-app/"><button>view</button></a>
+    <a href=""><button>🌐 Project 3</button></a>
+  </section>
+  <section class="total">
+         <h2>contacts</h2>
+         
+         +91 72005 30087 <br>
+         harishcse17@gmail.com <br>
+         213,pillaiyar kovil street,kadambai village somasipadi post, kilpennathur taluk,Thirvannamali 606 611.
+  </section>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 Harish. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
